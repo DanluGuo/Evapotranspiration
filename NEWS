@@ -1,0 +1,21 @@
+    CHANGES IN Evapotranspiration VERSION 1.12
+
+NEW FEATURES
+    o  NA
+   
+SIGNIFICANT USER-VISIBLE CHANGES
+    o  ET - additional argument 'message' which allow users to specify if estimation summary should be displayed on screen.
+    o  ET - additional argument 'save.csv' which allow users to specify if ET estimates should be saved as a .csv file in the working directory.
+    o  ET.MortonCRAE and ET.MortonCRWE - incorporated the equation from Morton (1983) to estimate sunshine hours when solar radiation data is used as an input which significantly improved the calculation speed. 
+
+BUG FIXES
+    o  ET.MortonCRAE and ET.MortonCRWE - corrected previous bug that requires both actual and saturated  vapour pressure data for estimating dew point temperature. Updated version only requires actual vapour pressure, while saturated vapoure pressure can be estimated using RHmax and RHmin.
+
+MINOR CHANGES
+    o  NA
+    
+DEPRECATED & DEFUNCT
+    o  NA
+    
+REFERENCES
+    o  Morton, F.I. 1983, Operational estimates of areal evapotranspiration and their significance to the science and practice of hydrology. Journal of Hydrology, vol. 66, no. 1-4, pp. 1-76.
